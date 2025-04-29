@@ -61,21 +61,21 @@ class Laptops:
         print(f"Сатуу {self.brand} {self.model} {self. year} {self.color}  {self.price} журуп жатат")
 
 class Dell (Laptops):
-    def A (self):
+    def processor (self):
         print(f"Ноутбук Dell {self.brand} {self.model} - {self.year}-жылы чыккан, {self.color} түстө, баасы {self.price}. "
               f"Бул модель Intel Core i5 процессору жана 8GB RAM менен жабдылган, иш үчүн абдан ыңгайлуу.")
 
 
 class Asus (Laptops):
-    def B (self):
+    def VideoCard (self):
         print(f"Ноутбук Asus {self.brand} {self.model} - {self.year}-жылы чыккан, {self.color} түстө, баасы {self.price}. "
               f"Бул ноутбук оюнга ылайыктуу, анткени ал күчтүү видеокарта жана жогорку жаңылануу ылдамдыгы менен келет.")
 
 
 class Samsung (Laptops):
-    def C (self):
+    def design (self):
         print(f"Ноутбук Samsung {self.brand} {self.model} - {self.year}-жылы чыккан, {self.color} түстө, баасы {self.price}. "
-              f"Бул модель ультражука дизайны менен айырмаланат жана AMOLED дисплей менен жабдылган.")
+              f"Бул модель дизайны менен айырмаланат жана AMOLED дисплей менен жабдылган.")
 
 ## Создаем объект класса Loptops
 Laptops = Laptops("Acer", "13420H", 2021, "кара жана ак", "70 000 cом")
@@ -87,17 +87,17 @@ Laptops.stop_the_Sale()
 Dell = Dell("Dell", "Vostro 14 3000", 2022, "кара", "40 000 сом")
 Dell.start_the_Sale()
 Dell.stop_the_Sale()
-Dell.A()
+Dell.processor()
 
 ## Создаем объект класса Asus
 Asus = Asus("Asus", "7435HS", 2023, "ак", "69 000")
 Asus.start_the_Sale()
 Asus.stop_the_Sale()
-Asus.B()
+Asus.VideoCard()
 
 
 ## Создаем объект класса Samsung
 Samsung = Samsung("Samsung", "Galaxy Book3 Pro NP960XFG-KA2", 2024, "кызыл", "140 000 сом")
 Samsung.start_the_Sale()
 Samsung.stop_the_Sale()
-Samsung.C()
+Samsung.design()
